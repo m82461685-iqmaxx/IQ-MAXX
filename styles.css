@@ -21,6 +21,12 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 :root {
   /* 50% Light Blue Theme Surface Ladder */
   --bg: #dbeafe;
