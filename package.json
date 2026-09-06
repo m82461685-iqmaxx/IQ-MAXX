@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "http-server . -p 3000 -c-1 --cors -o",
     "start": "http-server . -p 8080 -c-1 --cors",
-    "preview": "http-server . -p 4000 -c-1 --cors -o"
+    "preview": "http-server . -p 4000 -c-1 --cors -o",
+    "deploy": "npx vercel",
+    "deploy:prod": "npx vercel --prod"
   },
   "keywords": [
     "cybersecurity",
