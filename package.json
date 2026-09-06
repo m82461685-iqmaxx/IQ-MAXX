@@ -1,0 +1,29 @@
+{
+  "name": "iq-maxx",
+  "version": "1.0.0",
+  "description": "IQ MAXX — Premium AI Cybersecurity TUI & CLI Tools",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -c-1 --cors -o",
+    "start": "http-server . -p 8080 -c-1 --cors",
+    "preview": "http-server . -p 4000 -c-1 --cors -o"
+  },
+  "keywords": [
+    "cybersecurity",
+    "tui",
+    "cli",
+    "linux",
+    "bug-bounty",
+    "devops",
+    "ui-ux",
+    "animation"
+  ],
+  "author": "Deepak Kumar.S",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

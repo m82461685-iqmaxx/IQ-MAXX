@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IQ MAXX — Premium AI Cybersecurity TUI & CLI Tools, Linux, Bug Bounty Hunting, Offensive TUI Tools, DevOps, UI/UX Design." />
+  <title>IQ MAXX — Deepak Kumar.S | Cyber Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed Blue Global VFX Background Layers -->
+  <div class="bg-fixed-wrap" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+  </div>
+
+  <!-- Three.js Blue Global VFX Particle Canvas -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <noscript>
+    <div class="noscript-fallback">
+      This experience requires JavaScript to view interactive simulations.
+    </div>
+  </noscript>
+
+  <!-- Minimalist Floating Navigation Bar -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="IQ MAXX home">
+        <img src="assets/images/iqmaxx-logo.png" alt="IQ MAXX Logo" class="nav-logo-img" />
+        <span class="logo-text">IQ MAXX</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#app-suite" class="nav-highlight-link">App Suite</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#founder">Founder</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Multi-Colored Social Action Cluster -->
+      <div class="nav-social-cluster" aria-label="Quick Links">
+        <a class="social-round-btn social-btn--portfolio magnetic" href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" title="Deepak's Portfolio" aria-label="Deepak's Portfolio">
+          <span class="nav-btn-avatar"><img src="assets/images/founder-deepak.png" alt="Portfolio" class="nav-avatar-img" /></span>
+          <span class="round-tooltip">Live Portfolio</span>
+        </a>
+        <a class="social-round-btn social-btn--github magnetic" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" title="IQ MAXX GitHub" aria-label="IQ MAXX GitHub">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.35.78 1.04.78 2.09v3.1c0 .3.21.66.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+          <span class="round-tooltip">IQ MAXX GitHub</span>
+        </a>
+        <a class="social-round-btn social-btn--repos magnetic" href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer" title="IQ Tools Repositories" aria-label="IQ Tools Repositories">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg>
+          <span class="round-tooltip">IQ Repositories</span>
+        </a>
+        <a class="social-round-btn social-btn--insta magnetic" href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram @iq_maxx143" aria-label="Instagram @iq_maxx143">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span class="round-tooltip">Instagram</span>
+        </a>
+        <a class="social-round-btn social-btn--email1 magnetic" href="mailto:m82461685@gmail.com" title="Email: m82461685@gmail.com" aria-label="Email m82461685@gmail.com">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="round-tooltip">Primary Email</span>
+        </a>
+      </div>
+
+      <!-- Multi-Color Vibrant Nav CTA Button -->
+      <a class="nav-cta magnetic" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" data-scramble="IQ MAXX GITHUB">
+        <span class="btn-text">IQ MAXX GITHUB</span>
+        <svg class="btn-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+
+      <!-- Three-Dots Kebab Toggle for Mobile View -->
+      <button class="nav-toggle nav-dots-toggle" id="nav-toggle" aria-label="Open mobile menu" aria-expanded="false" title="Menu">
+        <span class="nav-dot dot-1"></span>
+        <span class="nav-dot dot-2"></span>
+        <span class="nav-dot dot-3"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#app-suite">App Suite</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#founder">Founder</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <div class="nav-mobile-featured-link">
+        <a href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-mobile-portfolio-pill">
+          <div class="nav-mob-avatar-wrap">
+            <img src="assets/images/founder-deepak.png" alt="Deepak Kumar.S" class="nav-mob-avatar" />
+            <span class="nav-mob-dot"></span>
+          </div>
+          <div class="nav-mob-info">
+            <span class="nav-mob-label">OFFICIAL PORTFOLIO</span>
+            <span class="nav-mob-sub">dk-s-profile.vercel.app ↗</span>
+          </div>
+        </a>
+      </div>
+      <div class="nav-mobile-socials">
+        <a href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer">IQ MAXX GitHub ↗</a>
+        <a href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer">IQ Tools Repos ↗</a>
+        <a href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer">Instagram @iq_maxx143 ↗</a>
+        <a href="mailto:m82461685@gmail.com">m82461685@gmail.com ✉</a>
+        <a href="mailto:iqmaxxdk143@gmail.com">iqmaxxdk143@gmail.com ✉</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME SECTION (98% Transparent, Centered Highlighted Brand Name & Logo) -->
+    <section class="masthead" id="home">
+      <div class="container">
+        <div class="masthead-framework-grid">
+          <!-- 98% Transparent Framework Cell -->
+          <div class="masthead-main-cell reveal">
+            <!-- Centered & Highlighted Big Brand Logo & Name Header -->
+            <div class="masthead-centered-brand">
+              <div class="masthead-logo-wrap">
+                <img
+                  src="assets/images/iqmaxx-logo.png"
+                  alt="IQ MAXX Brand Logo"
+                  class="masthead-logo-img"
+                  loading="eager"
+                />
+                <div class="masthead-logo-glow" aria-hidden="true"></div>
+                <div class="masthead-logo-aura-ring" aria-hidden="true"></div>
+              </div>
+              
+              <div class="masthead-brand-meta">
+                <span class="masthead-tag">ARCHITECTURAL CYBER SYSTEM // v2.6.4</span>
+                <h1 class="masthead-title">IQ MAXX</h1>
+              </div>
+
+              <div class="masthead-eyebrow-pill">
+                <span class="dot"></span>
+                <span>AI · CYBERSECURITY · TUI/CLI · LINUX · DEVOPS · UI/UX</span>
+              </div>
+            </div>
+
+            <!-- FEATURED PORTFOLIO LINK BAR WITH FOUNDER'S ROUND IMAGE -->
+            <div class="hero-portfolio-bar-wrap reveal">
+              <a href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" class="hero-portfolio-bar magnetic" title="Deepak Kumar.S — Live Developer & Cybersecurity Portfolio">
+                <div class="hpb-avatar-container">
+                  <div class="hpb-avatar-ring">
+                    <img src="assets/images/founder-deepak.png" alt="Deepak Kumar.S" class="hpb-avatar-img" />
+                  </div>
+                  <span class="hpb-live-indicator" aria-hidden="true"></span>
+                </div>
+                <div class="hpb-info">
+                  <div class="hpb-tagline">
+                    <span class="hpb-tag-badge">FOUNDER & CYBER ARCHITECT</span>
+                    <span class="hpb-status-pulse"><span class="hpb-pulse-dot"></span>LIVE PORTFOLIO</span>
+                  </div>
+                  <span class="hpb-title">DEEPAK KUMAR.S — PORTFOLIO</span>
+                  <span class="hpb-domain">https://dk-s-profile.vercel.app/</span>
+                </div>
+                <div class="hpb-action-chip">
+                  <span>VISIT LINK</span>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Centered Lede & Multi-Colored Action Buttons -->
+            <div class="masthead-body-centered">
+              <p class="masthead-lede">
+                An open-source ecosystem building the next generation of terminal-first cybersecurity tools, offensive security utilities, and Linux system software with precision UI/UX design.
+              </p>
+
+              <div class="masthead-actions">
+                <a href="#app-suite" class="btn btn-primary btn-multicolor-primary" data-scramble="LAUNCH CYBER APP">
+                  <span class="btn-text">LAUNCH CYBER APP</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </a>
+                <a href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-hero magnetic" data-scramble="MY PORTFOLIO">
+                  <span class="btn-text">MY PORTFOLIO</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+                <a href="#gallery" class="btn btn-ghost btn-multicolor-ghost" data-scramble="EXPLORE SIMULATIONS">
+                  <span class="btn-text">EXPLORE SIMULATIONS</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Framework Bottom Metrics & Multi-Colored Social Row -->
+            <div class="masthead-footer-row">
+              <div class="masthead-stats">
+                <div class="mstat"><span class="mstat-num" data-count="8">0</span><span class="mstat-lbl">Active Tools</span></div>
+                <div class="mstat-sep"></div>
+                <div class="mstat"><span class="mstat-num" data-count="5">0</span><span class="mstat-lbl">Core Domains</span></div>
+                <div class="mstat-sep"></div>
+                <div class="mstat"><span class="mstat-num" data-count="100">0</span><span class="mstat-lbl">% Open Source</span></div>
+              </div>
+
+              <div class="masthead-social-dock" aria-label="Direct Quick Channels">
+                <span class="dock-label">DIRECT ACCESS:</span>
+                <a class="social-round-btn social-round-btn--hero social-btn--portfolio" href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" title="Founder Portfolio" aria-label="Founder Portfolio">
+                  <span class="nav-btn-avatar"><img src="assets/images/founder-deepak.png" alt="Portfolio" class="nav-avatar-img" /></span>
+                  <span class="round-tooltip">Live Portfolio</span>
+                </a>
+                <a class="social-round-btn social-round-btn--hero social-btn--github" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" title="IQ MAXX GitHub" aria-label="IQ MAXX GitHub">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.35.78 1.04.78 2.09v3.1c0 .3.21.66.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                  <span class="round-tooltip">IQ MAXX GitHub</span>
+                </a>
+                <a class="social-round-btn social-round-btn--hero social-btn--repos" href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer" title="IQ Tools Repositories" aria-label="IQ Tools Repositories">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg>
+                  <span class="round-tooltip">IQ Tools Repos</span>
+                </a>
+                <a class="social-round-btn social-round-btn--hero social-btn--insta" href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram @iq_maxx143" aria-label="Instagram @iq_maxx143">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <span class="round-tooltip">Instagram @iq_maxx143</span>
+                </a>
+                <a class="social-round-btn social-round-btn--hero social-btn--email1" href="mailto:m82461685@gmail.com" title="Email: m82461685@gmail.com" aria-label="Email m82461685@gmail.com">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span class="round-tooltip">m82461685@gmail.com</span>
+                </a>
+                <a class="social-round-btn social-round-btn--hero social-btn--email2" href="mailto:iqmaxxdk143@gmail.com" title="Email: iqmaxxdk143@gmail.com" aria-label="Email iqmaxxdk143@gmail.com">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                  <span class="round-tooltip">iqmaxxdk143@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 // ABOUT SECTION -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">01</span><span class="section-tag">PHILOSOPHY</span></div>
+        <h2 class="section-title reveal">THE BRAND FRAMEWORK</h2>
+        <p class="section-lede reveal">IQ MAXX is a cyber-first brand building AI-powered cybersecurity tools, offensive security utilities, and precision UI/UX experiences — directly from the terminal.</p>
+
+        <div class="about-grid">
+          <div class="about-card reveal" data-delay="1">
+            <div class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg></div>
+            <h3>AI Cybersecurity</h3>
+            <p>Building intelligent TUI & CLI tools powered by AI for real-world security assessments and threat detection.</p>
+          </div>
+          <div class="about-card reveal" data-delay="2">
+            <div class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+            <h3>Terminal First</h3>
+            <p>Every tool is designed for the command line — keyboard driven, scriptable, and blazingly fast.</p>
+          </div>
+          <div class="about-card reveal" data-delay="3">
+            <div class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+            <h3>Offensive Security</h3>
+            <p>Developing offensive TUI tools for bug bounty hunting, penetration testing, and red team operations.</p>
+          </div>
+          <div class="about-card reveal" data-delay="4">
+            <div class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>DevOps & Linux</h3>
+            <p>Linux system utilities, DevOps automation tools, and infrastructure helpers for modern workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 // WEB APPLICATION — IQ MAXX CYBER SUITE -->
+    <section class="section app-suite-section" id="app-suite">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">02</span><span class="section-tag">WEB APPLICATION</span></div>
+        <h2 class="section-title reveal">IQ MAXX CYBER SUITE</h2>
+        <p class="section-lede reveal">A professional browser-based cyber intelligence console integrating real-time recon scanning, offensive payload generation, cryptographic analysis, AI exploit triage, and live SOC radar telemetry.</p>
+
+        <!-- Professional Glassmorphic Cyber Application Window -->
+        <div class="cyber-app-window reveal" id="cyber-app-suite">
+          <!-- Window Header / Top Bar -->
+          <div class="app-topbar">
+            <div class="app-window-controls" aria-hidden="true">
+              <span class="win-dot win-dot--red"></span>
+              <span class="win-dot win-dot--yellow"></span>
+              <span class="win-dot win-dot--green"></span>
+            </div>
+            
+            <div class="app-identity">
+              <div class="app-brand-pill">
+                <span class="app-brand-dot"></span>
+                <span class="app-brand-name">IQ MAXX // CYBER CONSOLE</span>
+                <span class="app-version-tag">v3.4-PRO</span>
+              </div>
+            </div>
+
+            <div class="app-telemetry-badge">
+              <span class="app-pulse-indicator"></span>
+              <span class="telemetry-text">SYSTEM READY · 3ms LATENCY</span>
+            </div>
+          </div>
+
+          <!-- Application Navigation Tabs -->
+          <div class="app-tab-dock" role="tablist" aria-label="Cyber Suite Tools">
+            <button class="app-tab-btn active" role="tab" aria-selected="true" data-tab="recon" id="tab-recon" aria-controls="panel-recon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+              <span>TARGET RECON</span>
+              <span class="tab-chip tab-chip--cyan">LIVE</span>
+            </button>
+            <button class="app-tab-btn" role="tab" aria-selected="false" data-tab="payload" id="tab-payload" aria-controls="panel-payload">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              <span>PAYLOAD STUDIO</span>
+              <span class="tab-chip tab-chip--emerald">CLI</span>
+            </button>
+            <button class="app-tab-btn" role="tab" aria-selected="false" data-tab="crypto" id="tab-crypto" aria-controls="panel-crypto">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>CRYPTO & HASH</span>
+              <span class="tab-chip tab-chip--purple">SANDBOX</span>
+            </button>
+            <button class="app-tab-btn" role="tab" aria-selected="false" data-tab="aipilot" id="tab-aipilot" aria-controls="panel-aipilot">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M9 14a3 3 0 0 0 6 0"/></svg>
+              <span>AI CO-PILOT</span>
+              <span class="tab-chip tab-chip--rose">AI TRIAGE</span>
+            </button>
+            <button class="app-tab-btn" role="tab" aria-selected="false" data-tab="soc" id="tab-soc" aria-controls="panel-soc">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 1 0 18"/></svg>
+              <span>SOC RADAR</span>
+              <span class="tab-chip tab-chip--amber">STREAM</span>
+            </button>
+          </div>
+
+          <!-- TAB PANELS WORKSPACE -->
+          <div class="app-workspace">
+            <!-- PANEL 1: TARGET RECON & PORT SCANNER -->
+            <div class="app-panel active" id="panel-recon" role="tabpanel" aria-labelledby="tab-recon">
+              <div class="recon-toolbar">
+                <div class="recon-input-group">
+                  <span class="recon-prefix">TARGET://</span>
+                  <input type="text" class="recon-target-input" id="recon-target" value="infra-api.iqmaxx-sec.internal" placeholder="Enter IP, domain or CIDR..." aria-label="Target domain or IP">
+                </div>
+                <div class="recon-profile-group">
+                  <select class="recon-select" id="recon-profile" aria-label="Scan Profile">
+                    <option value="quick">⚡ Quick TCP & SSL Audit</option>
+                    <option value="deep">🔍 Deep Vulnerability & CVE Scan</option>
+                    <option value="subdomain">🌐 Subdomain Discovery (DNS/Cert)</option>
+                    <option value="stealth">🛡️ Stealth Syn & Firewall Probe</option>
+                  </select>
+                  <button class="btn btn-primary app-action-btn" id="btn-run-recon">
+                    <span class="btn-text">RUN SCAN</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Scanning Progress Bar (Animated) -->
+              <div class="recon-progress-wrap" id="recon-progress-bar" style="display: none;">
+                <div class="recon-progress-info">
+                  <span class="recon-step-text" id="recon-step-label">Initializing SYN Packet Dispatch...</span>
+                  <span class="recon-percent" id="recon-percent-val">0%</span>
+                </div>
+                <div class="recon-progress-track">
+                  <div class="recon-progress-fill" id="recon-progress-fill"></div>
+                </div>
+              </div>
+
+              <!-- Recon Results Grid -->
+              <div class="recon-results-grid">
+                <!-- Target Health & Score Summary Card -->
+                <div class="recon-card recon-score-card">
+                  <div class="recon-card-head">
+                    <span class="rc-tag">SECURITY AUDIT SCORE</span>
+                    <span class="rc-badge rc-badge--secure" id="recon-status-badge">TARGET REACHABLE</span>
+                  </div>
+                  <div class="score-display">
+                    <div class="score-ring">
+                      <span class="score-val" id="recon-score-val">89</span>
+                      <span class="score-total">/100</span>
+                    </div>
+                    <div class="score-breakdown">
+                      <div class="sb-item"><span>Grade:</span> <strong class="tok-ok" id="recon-grade">A- (SECURE)</strong></div>
+                      <div class="sb-item"><span>TLS Version:</span> <strong class="tok-info" id="recon-tls">TLS 1.3 / ECDHE</strong></div>
+                      <div class="sb-item"><span>WAF Detected:</span> <strong class="tok-ok">Cloudflare / ModSec</strong></div>
+                      <div class="sb-item"><span>Scan Latency:</span> <strong class="tok-info" id="recon-latency">4.2 ms</strong></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Discovered Ports & Services -->
+                <div class="recon-card recon-ports-card">
+                  <div class="recon-card-head">
+                    <span class="rc-tag">DISCOVERED SERVICES & PORTS</span>
+                    <span class="rc-counter" id="recon-ports-count">4 OPEN PORTS</span>
+                  </div>
+                  <div class="recon-table-wrap">
+                    <table class="recon-table">
+                      <thead>
+                        <tr>
+                          <th>PORT</th>
+                          <th>SERVICE</th>
+                          <th>BANNER / VERSION</th>
+                          <th>STATE</th>
+                        </tr>
+                      </thead>
+                      <tbody id="recon-ports-body">
+                        <tr><td><span class="port-tag">443/tcp</span></td><td>HTTPS</td><td>nginx 1.25.4 (Alpn h2)</td><td><span class="status-pill status-pill--open">OPEN</span></td></tr>
+                        <tr><td><span class="port-tag">80/tcp</span></td><td>HTTP</td><td>301 Redirect to 443</td><td><span class="status-pill status-pill--open">OPEN</span></td></tr>
+                        <tr><td><span class="port-tag">22/tcp</span></td><td>SSH</td><td>OpenSSH 9.6p1 Debian</td><td><span class="status-pill status-pill--filtered">FILTERED</span></td></tr>
+                        <tr><td><span class="port-tag">8443/tcp</span></td><td>REST-API</td><td>IQ MAXX Auth Gateway</td><td><span class="status-pill status-pill--open">OPEN</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CVE & Exposure Findings -->
+              <div class="recon-cve-strip">
+                <div class="cve-strip-head">
+                  <span class="cve-strip-title">POTENTIAL CVE FINDINGS & EXPOSURES</span>
+                  <span class="cve-stats"><span class="cve-pill cve-pill--crit">0 CRITICAL</span> <span class="cve-pill cve-pill--med">1 MEDIUM</span> <span class="cve-pill cve-pill--pass">3 PASSED</span></span>
+                </div>
+                <div class="cve-items-list" id="recon-cve-list">
+                  <div class="cve-item">
+                    <span class="cve-id tok-warn">CWE-200</span>
+                    <span class="cve-desc">Information Disclosure: Detailed server banner emitted in HTTP Server header.</span>
+                    <span class="cve-sev cve-sev--med">MEDIUM</span>
+                  </div>
+                  <div class="cve-item">
+                    <span class="cve-id tok-ok">PASS-HSTS</span>
+                    <span class="cve-desc">HTTP Strict Transport Security (HSTS) properly configured with max-age=31536000.</span>
+                    <span class="cve-sev cve-sev--low">PASSED</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 2: PAYLOAD STUDIO -->
+            <div class="app-panel" id="panel-payload" role="tabpanel" aria-labelledby="tab-payload">
+              <div class="payload-builder-grid">
+                <div class="payload-controls-card">
+                  <h4 class="card-subtitle">CONFIGURATION & GENERATOR</h4>
+                  
+                  <div class="form-group">
+                    <label for="payload-category" class="form-label">Category</label>
+                    <select class="recon-select" id="payload-category">
+                      <option value="recon">🌐 Subdomain & Network Recon (CLI)</option>
+                      <option value="sqli">💉 SQL Injection & Blind Probing</option>
+                      <option value="xss">⚡ Cross-Site Scripting (XSS / CSP Bypass)</option>
+                      <option value="privesc">🐧 Linux Privilege Escalation Checkers</option>
+                      <option value="revshell">📡 Reverse Shell & TTY Spawn</option>
+                      <option value="fuzz">🎯 FFUF & Directory Fuzzing Commands</option>
+                    </select>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="payload-lhost" class="form-label">Target / LHOST</label>
+                      <input type="text" class="recon-target-input" id="payload-lhost" value="10.10.14.22" placeholder="IP or Hostname">
+                    </div>
+                    <div class="form-group">
+                      <label for="payload-lport" class="form-label">Port / LPORT</label>
+                      <input type="text" class="recon-target-input" id="payload-lport" value="9001" placeholder="4444">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="payload-encoding" class="form-label">Encoding Wrapper</label>
+                    <select class="recon-select" id="payload-encoding">
+                      <option value="raw">None (Raw Command)</option>
+                      <option value="base64">Base64 Encoded (bash -c)</option>
+                      <option value="url">URL Encoded (%20)</option>
+                      <option value="hex">Hex Encoded (\x2f)</option>
+                    </select>
+                  </div>
+
+                  <button class="btn btn-primary app-action-btn full-width" id="btn-gen-payload">
+                    <span class="btn-text">REGENERATE PAYLOAD</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                  </button>
+                </div>
+
+                <div class="payload-output-card">
+                  <div class="output-card-head">
+                    <span class="rc-tag">GENERATED ONE-LINER & EXPLOIT SYNTAX</span>
+                    <button class="copy-btn" id="btn-copy-payload" aria-label="Copy payload to clipboard">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                      <span class="copy-btn-text">COPY</span>
+                    </button>
+                  </div>
+                  <pre class="code-preview-box"><code id="payload-code-output" class="language-bash">subfinder -d target.com -silent | httpx -sc -title -tech-detect -threads 50 -o live-targets.txt</code></pre>
+
+                  <div class="payload-presets-dock">
+                    <span class="presets-title">QUICK PRESETS:</span>
+                    <button class="preset-chip" data-preset="nmap-stealth">Nmap Syn Scan</button>
+                    <button class="preset-chip" data-preset="ffuf-fuzz">FFUF API Fuzz</button>
+                    <button class="preset-chip" data-preset="rev-bash">Bash TTY Shell</button>
+                    <button class="preset-chip" data-preset="linpeas">LinPEAS Curl</button>
+                    <button class="preset-chip" data-preset="sql-sleep">Blind SQLi Sleep</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 3: CRYPTO & HASH ANALYZER -->
+            <div class="app-panel" id="panel-crypto" role="tabpanel" aria-labelledby="tab-crypto">
+              <div class="crypto-workspace">
+                <div class="crypto-input-wrap">
+                  <label for="crypto-input" class="form-label">Live String / Hash Input</label>
+                  <textarea id="crypto-input" class="crypto-textarea" rows="3" placeholder="Type or paste any password, token, or hash to analyze in real-time...">IQ-MAXX-SECURE-AUTH-2026</textarea>
+                </div>
+
+                <!-- Shannon Entropy Meter -->
+                <div class="entropy-meter-wrap">
+                  <div class="entropy-header">
+                    <span class="em-label">SHANNON ENTROPY STRENGTH</span>
+                    <span class="em-score" id="entropy-score">4.35 Bits/Char (STRONG)</span>
+                  </div>
+                  <div class="entropy-track">
+                    <div class="entropy-fill" id="entropy-fill" style="width: 78%;"></div>
+                  </div>
+                </div>
+
+                <!-- Hash Results Multi-Grid -->
+                <div class="crypto-results-grid">
+                  <div class="crypto-field-card">
+                    <div class="cfc-head">
+                      <span class="cfc-label">SHA-256 (WebCrypto API)</span>
+                      <button class="copy-mini-btn" data-copy-target="hash-sha256">COPY</button>
+                    </div>
+                    <div class="cfc-val" id="hash-sha256">Computing...</div>
+                  </div>
+
+                  <div class="crypto-field-card">
+                    <div class="cfc-head">
+                      <span class="cfc-label">Base64 Encoded</span>
+                      <button class="copy-mini-btn" data-copy-target="hash-base64">COPY</button>
+                    </div>
+                    <div class="cfc-val" id="hash-base64">SVEtTUFYWC1TRUNVUkUtQVVUSC0yMDI2</div>
+                  </div>
+
+                  <div class="crypto-field-card">
+                    <div class="cfc-head">
+                      <span class="cfc-label">Hexadecimal Dump</span>
+                      <button class="copy-mini-btn" data-copy-target="hash-hex">COPY</button>
+                    </div>
+                    <div class="cfc-val" id="hash-hex">49512d4d4158582d5345435552452d415554482d32303236</div>
+                  </div>
+
+                  <div class="crypto-field-card">
+                    <div class="cfc-head">
+                      <span class="cfc-label">MD5 Checksum Representation</span>
+                      <button class="copy-mini-btn" data-copy-target="hash-md5">COPY</button>
+                    </div>
+                    <div class="cfc-val" id="hash-md5">c63d917fe45da815239a04cb8892f390</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 4: AI CO-PILOT VULNERABILITY TRIAGE -->
+            <div class="app-panel" id="panel-aipilot" role="tabpanel" aria-labelledby="tab-aipilot">
+              <div class="aipilot-grid">
+                <div class="aipilot-prompt-card">
+                  <h4 class="card-subtitle">SELECT VULNERABILITY SCENARIO</h4>
+                  <div class="scenario-buttons">
+                    <button class="scenario-btn active" data-scenario="sqli">
+                      <span class="scen-icon">💉</span>
+                      <span class="scen-text">Blind SQLi in Auth Endpoint</span>
+                      <span class="scen-cvss cvss-crit">9.8</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="ssrf">
+                      <span class="scen-icon">🌐</span>
+                      <span class="scen-text">Cloud Metadata SSRF via Webhook</span>
+                      <span class="scen-cvss cvss-high">8.6</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="idor">
+                      <span class="scen-icon">🔑</span>
+                      <span class="scen-text">Broken Object Level Auth (IDOR)</span>
+                      <span class="scen-cvss cvss-high">8.1</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="jwt">
+                      <span class="scen-icon">📜</span>
+                      <span class="scen-text">JWT "none" Alg Signature Bypass</span>
+                      <span class="scen-cvss cvss-crit">9.1</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="aipilot-analysis-card">
+                  <div class="analysis-header">
+                    <div class="analysis-title-group">
+                      <span class="ai-badge"><span class="ai-dot"></span>IQ MAXX AI ENGINE</span>
+                      <h3 class="analysis-vuln-name" id="ai-vuln-title">Blind SQL Injection in Auth Endpoint</h3>
+                    </div>
+                    <span class="cvss-pill cvss-crit" id="ai-vuln-cvss">CVSS 9.8 CRITICAL</span>
+                  </div>
+
+                  <div class="analysis-section">
+                    <h5 class="sec-label">IMPACT & ATTACK VECTOR:</h5>
+                    <p class="sec-desc" id="ai-vuln-desc">Unsanitized user payload injected into SQL query allows attackers to bypass authentication, dump database schemas, and achieve remote administrative takeover.</p>
+                  </div>
+
+                  <div class="analysis-section">
+                    <h5 class="sec-label">SAFE MITIGATION PATCH:</h5>
+                    <pre class="code-preview-box code-preview-box--ai"><code id="ai-vuln-patch">// Secure Parameterized Prepared Statement (Node.js/pg)
+const query = 'SELECT id, role, password_hash FROM users WHERE username = $1';
+const result = await db.query(query, [sanitizedUsername]);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 5: LIVE SOC THREAT RADAR -->
+            <div class="app-panel" id="panel-soc" role="tabpanel" aria-labelledby="tab-soc">
+              <div class="soc-grid">
+                <div class="soc-telemetry-feed-card">
+                  <div class="soc-feed-head">
+                    <span class="rc-tag">REAL-TIME INCOMING THREAT STREAM</span>
+                    <div class="soc-controls">
+                      <button class="soc-toggle-btn" id="btn-toggle-soc-stream">PAUSE STREAM</button>
+                    </div>
+                  </div>
+                  <div class="soc-stream-box" id="soc-stream-container">
+                    <!-- Dynamic Live Log Stream Items -->
+                  </div>
+                </div>
+
+                <div class="soc-stats-card">
+                  <h4 class="card-subtitle">GLOBAL DEFENSE TELEMETRY</h4>
+                  <div class="soc-metric-grid">
+                    <div class="soc-metric-item">
+                      <span class="smi-label">Threats Blocked</span>
+                      <span class="smi-val tok-ok" id="soc-stat-blocked">1,482</span>
+                    </div>
+                    <div class="soc-metric-item">
+                      <span class="smi-label">Active Sensors</span>
+                      <span class="smi-val tok-info">64 NODES</span>
+                    </div>
+                    <div class="soc-metric-item">
+                      <span class="smi-label">Avg Inspection</span>
+                      <span class="smi-val">1.2 ms</span>
+                    </div>
+                    <div class="soc-metric-item">
+                      <span class="smi-label">WAF Health</span>
+                      <span class="smi-val tok-ok">99.99%</span>
+                    </div>
+                  </div>
+
+                  <div class="soc-defense-matrix">
+                    <span class="matrix-title">ACTIVE DEFENSE LAYERS</span>
+                    <ul class="matrix-list">
+                      <li><span class="matrix-dot dot--ok"></span> Layer 7 WAF Anomaly Filter [ONLINE]</li>
+                      <li><span class="matrix-dot dot--ok"></span> eBPF Kernel Network Shield [ARMED]</li>
+                      <li><span class="matrix-dot dot--ok"></span> AI Zero-Day Signature Scanner [ACTIVE]</li>
+                      <li><span class="matrix-dot dot--ok"></span> Rate Limiting & Geo-IP Fencing [ENGAGED]</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 // GALLERY — 6 LIVE PROCEDURAL VISUALIZERS -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">03</span><span class="section-tag">SIMULATIONS</span></div>
+        <h2 class="section-title reveal">PROJECT SHOWCASE</h2>
+        <p class="section-lede reveal">Live real-time procedural simulations and interactive animated visualizers from the IQ MAXX cybersecurity ecosystem.</p>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Card 1: Cyber Core Interface -->
+          <div class="gallery-item reveal gallery-item--large" data-delay="1">
+            <div class="gallery-card" data-engine="cyber-core">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-cyber-core"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>LIVE 60FPS</span>
+                    <span class="hud-badge hud-id">CORE://HUD.v4</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">LATENCY: <strong class="tok-ok">4ms</strong></span>
+                    <span class="hud-metric">SYNC: <strong class="tok-info">100%</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">FEATURED ENGINE</span>
+                  <span class="gallery-title">Cyber Core Interface</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--cyber-core magnetic" data-engine="cyber-core" data-scramble="PULSE CORE" aria-label="Engage Cyber Core HUD">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">PULSE CORE</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">CYBER CORE HUD</span>
+                <span class="gallery-date">ACTIVE STREAM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Terminal Dashboard -->
+          <div class="gallery-item reveal" data-delay="2">
+            <div class="gallery-card" data-engine="tui-dashboard">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-tui-dashboard"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>TUI MONITOR</span>
+                    <span class="hud-badge hud-id">TTY_01</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">CPU: <strong class="tok-ok">18%</strong></span>
+                    <span class="hud-metric">MEM: <strong class="tok-info">1.4GB</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">TUI DASHBOARD</span>
+                  <span class="gallery-title">Terminal System Monitor</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--tui magnetic" data-engine="tui-dashboard" data-scramble="BURST PROCESS" aria-label="Trigger Process Burst">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">BURST PROCESS</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">TUI ENGINE</span>
+                <span class="gallery-date">LIVE TELEMETRY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Network Scanner CLI -->
+          <div class="gallery-item reveal" data-delay="3">
+            <div class="gallery-card" data-engine="network-radar">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-network-radar"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>RADAR SWEEP</span>
+                    <span class="hud-badge hud-id">NET_SCAN</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">HOSTS: <strong class="tok-ok">24</strong></span>
+                    <span class="hud-metric">PORTS: <strong class="tok-info">OPEN</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">NETWORK CLI</span>
+                  <span class="gallery-title">Radar Packet Scanner</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--radar magnetic" data-engine="network-radar" data-scramble="SWEEP PING" aria-label="Trigger Radar Ping">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">SWEEP PING</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 010 18"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">NETWORK PROTOCOL</span>
+                <span class="gallery-date">RADAR SCAN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Bug Bounty Toolkit -->
+          <div class="gallery-item reveal gallery-item--wide" data-delay="1">
+            <div class="gallery-card" data-engine="bug-bounty">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-bug-bounty"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>OFFENSIVE RECON</span>
+                    <span class="hud-badge hud-id">EXPLOIT_TREE</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">ENDPOINTS: <strong class="tok-ok">148</strong></span>
+                    <span class="hud-metric">STATUS: <strong class="tok-ok">200 OK</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">OFFENSIVE SECURITY</span>
+                  <span class="gallery-title">Bug Bounty Recon Graph</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--bug magnetic" data-engine="bug-bounty" data-scramble="TRIGGER RECON" aria-label="Trigger Recon Crawl">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">TRIGGER RECON</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">VULN DISCOVERY</span>
+                <span class="gallery-date">ACTIVE HUNTER</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Linux Hardening Suite -->
+          <div class="gallery-item reveal" data-delay="2">
+            <div class="gallery-card" data-engine="linux-shield">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-linux-shield"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>SHIELD MATRIX</span>
+                    <span class="hud-badge hud-id">SEC_AUDIT</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">INTEGRITY: <strong class="tok-ok">99.8%</strong></span>
+                    <span class="hud-metric">FIREWALL: <strong class="tok-ok">ARMED</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">LINUX SECURITY</span>
+                  <span class="gallery-title">Hardening Shield Matrix</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--shield magnetic" data-engine="linux-shield" data-scramble="DEFLECT SPARK" aria-label="Trigger Shield Spark">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">DEFLECT SPARK</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">KERNEL HARDENING</span>
+                <span class="gallery-date">ARMED</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Kinetic Wave Engine -->
+          <div class="gallery-item reveal" data-delay="3">
+            <div class="gallery-card" data-engine="kinetic-waves">
+              <div class="gallery-screen">
+                <canvas class="gallery-canvas" id="canvas-kinetic-waves"></canvas>
+                <div class="screen-scanlines" aria-hidden="true"></div>
+                <div class="screen-hud">
+                  <div class="hud-top">
+                    <span class="hud-badge hud-rec"><span class="rec-dot"></span>KINETIC ENGINE</span>
+                    <span class="hud-badge hud-id">UI_PHYSICS</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-metric">WAVE: <strong class="tok-info">SIN_RGB</strong></span>
+                    <span class="hud-metric">FPS: <strong class="tok-ok">60.0</strong></span>
+                  </div>
+                </div>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">UI/UX ANIMATION</span>
+                  <span class="gallery-title">Kinetic Motion & Shaders</span>
+                  <div class="gallery-actions">
+                    <button class="gallery-action-btn gallery-btn--waves magnetic" data-engine="kinetic-waves" data-scramble="WARP SHADER" aria-label="Trigger Wave Warp">
+                      <span class="btn-pulse-dot"></span>
+                      <span class="btn-text">WARP SHADER</span>
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-meta">
+                <span class="gallery-cat">DYNAMIC VISUALS</span>
+                <span class="gallery-date">PROCEDURAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 // SERVICES SECTION -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">04</span><span class="section-tag">CAPABILITIES</span></div>
+        <h2 class="section-title reveal">WHAT WE BUILD</h2>
+        <p class="section-lede reveal">A curated ecosystem of cybersecurity tools, Linux utilities, and precision design experiences.</p>
+
+        <div class="services-grid">
+          <div class="service-card reveal" data-delay="1">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div>
+            <h3>AI TUI Tools</h3>
+            <p>Interactive terminal interfaces powered by machine learning for security analysis.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="service-card reveal" data-delay="2">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+            <h3>CLI Utilities</h3>
+            <p>Single-purpose command-line tools for scripting, automation, and pipelines.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="service-card reveal" data-delay="3">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div>
+            <h3>Bug Bounty</h3>
+            <p>Offensive security tools and workflows for bug bounty hunting and recon.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="service-card reveal" data-delay="4">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4h6v4H9zM7 8h10v12H7z"/><path d="M9 12h6M9 16h4"/></svg></div>
+            <h3>Linux Tools</h3>
+            <p>System-level helpers, wrappers, and automation for Linux power users.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="service-card reveal" data-delay="5">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6L2 12l6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></div>
+            <h3>DevOps</h3>
+            <p>Infrastructure automation, CI/CD helpers, and deployment utilities.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="service-card reveal" data-delay="6">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+            <h3>UI/UX Design</h3>
+            <p>Premium interface design, animation systems, and interaction design.</p>
+            <span class="service-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 // TERMINAL DEMO SECTION -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">05</span><span class="section-tag">INTERFACE</span></div>
+        <h2 class="section-title reveal">COMMAND-LINE DEMO</h2>
+        <p class="section-lede reveal">A glimpse of how IQ MAXX tools initialize. This is an interactive visual demonstration.</p>
+
+        <div class="terminal-window reveal" id="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <button class="term-dot-btn dot red" id="term-close" title="Kill Terminal Session" aria-label="Kill Terminal Session"><span class="dot-icon">✕</span></button>
+              <button class="term-dot-btn dot yellow" id="term-min" title="Minimize" aria-label="Minimize Terminal"><span class="dot-icon">−</span></button>
+              <button class="term-dot-btn dot green" id="term-max" title="Maximize" aria-label="Maximize Terminal"><span class="dot-icon">+</span></button>
+            </div>
+            <span class="terminal-title">iq-maxx — terminal v2.6.4</span>
+            <button class="term-reboot-btn magnetic" id="term-reboot" style="display:none;" aria-label="Restart Terminal">
+              <span class="btn-text">▶ RESTART SHELL</span>
+            </button>
+          </div>
+          <div class="terminal-body" id="terminal-body" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 // FOUNDER SECTION -->
+    <section class="section founder" id="founder">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">06</span><span class="section-tag">LEADERSHIP</span></div>
+        <h2 class="section-title reveal">THE MIND BEHIND IQ MAXX</h2>
+
+        <!-- Kinetic Dual Morphing Box Badge System -->
+        <div class="founder-morph-container reveal">
+          <!-- Box 1: Shutter Morphing Banner (1.5s Shutter Cycle) -->
+          <div class="morph-box morph-box-primary" id="morph-box-1" aria-label="Founder Profile">
+            <div class="shutter-plate shutter-plate--left" aria-hidden="true"></div>
+            <div class="shutter-plate shutter-plate--right" aria-hidden="true"></div>
+            <div class="morph-content-wrap">
+              <span class="morph-text morph-text--1 active">DEEPAK KUMAR.S</span>
+              <span class="morph-text morph-text--2">IQ MAXX — FOUNDER</span>
+            </div>
+          </div>
+
+          <!-- Box 2: Linux Forever Sub-Banner -->
+          <div class="morph-box morph-box-secondary" id="morph-box-2">
+            <span class="morph-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+            </span>
+            <span class="morph-static-text">LINUX FOREVER</span>
+            <span class="morph-pulse-dot" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- 3-Column Founder Framework Card -->
+        <div class="founder-card reveal">
+          <!-- Left Column: Official Brand Logo Showcase -->
+          <div class="founder-brand-logo-showcase" id="founder-brand-logo-showcase" aria-label="IQ MAXX Official Brand Logo">
+            <img
+              src="assets/images/iqmaxx-logo.png"
+              alt="IQ MAXX Official Brand Logo"
+              class="founder-big-logo-img"
+              id="founder-big-logo-img"
+              loading="eager"
+            />
+            <div class="brand-logo-badge">
+              <span class="brand-logo-dot"></span>
+              <span>BRAND // IQ MAXX</span>
+            </div>
+          </div>
+
+          <!-- Center Column: Founder Portrait ("Me" - Deepak Kumar.S) -->
+          <div class="founder-photo-stage" id="founder-photo-stage">
+            <div class="photo-vfx-img-wrap">
+              <img
+                src="assets/images/founder-deepak.png"
+                alt="Deepak Kumar.S — Founder of IQ MAXX"
+                class="founder-vfx-img"
+                id="founder-vfx-img"
+                loading="eager"
+              />
+              <div class="photo-vfx-flash" id="photo-vfx-flash" aria-hidden="true"></div>
+            </div>
+            <div class="photo-vfx-badge">
+              <span class="vfx-live-dot"></span>
+              <span>CYBER_FOUNDER // DK</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Founder Info & Details -->
+          <div class="founder-info">
+            <div class="founder-title-row">
+              <h3 class="founder-name">DEEPAK KUMAR.S</h3>
+              <span class="founder-verified-badge" title="Verified Founder">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                FOUNDER & LEAD
+              </span>
+            </div>
+            <p class="founder-role">Founder & Lead Developer — IQ MAXX</p>
+
+            <div class="founder-quals">
+              <span class="qual-badge qual-badge--primary magnetic" data-scramble="CSE(CYBER SECURITY)">CSE(CYBER SECURITY)</span>
+              <span class="qual-badge qual-badge--bounty magnetic" data-scramble="Bug Bounty Hunter">Bug Bounty Hunter</span>
+              <span class="qual-badge qual-badge--linux magnetic" data-scramble="Linux Enthusiast">Linux Enthusiast</span>
+              <span class="qual-badge qual-badge--uiux magnetic" data-scramble="UI/UX Designer">UI/UX Designer</span>
+            </div>
+
+            <p class="founder-bio">
+              Founder of <strong>IQ MAXX</strong>. A Computer Science & Engineering student specializing in <strong>CSE(CYBER SECURITY)</strong>, passionate about building AI-powered cybersecurity tools, offensive security utilities, Linux power systems, and cinematic UI/UX experiences. Currently developing next-generation terminal-first security tools and offensive TUI solutions.
+            </p>
+
+            <!-- Founder Direct Contact & Multi-Colored Social Round Buttons Hub -->
+            <div class="founder-contact-bar">
+              <span class="founder-contact-label">DIRECT CHANNELS:</span>
+              <div class="founder-social-cluster">
+                <a class="social-round-btn social-round-btn--founder social-btn--portfolio magnetic" href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" title="Founder Official Portfolio" aria-label="Founder Official Portfolio">
+                  <span class="nav-btn-avatar"><img src="assets/images/founder-deepak.png" alt="Portfolio" class="nav-avatar-img" /></span>
+                  <span class="round-tooltip">Live Portfolio</span>
+                </a>
+                <a class="social-round-btn social-round-btn--founder social-btn--github magnetic" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" title="IQ MAXX GitHub" aria-label="IQ MAXX GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.35.78 1.04.78 2.09v3.1c0 .3.21.66.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                  <span class="round-tooltip">IQ MAXX GitHub</span>
+                </a>
+                <a class="social-round-btn social-round-btn--founder social-btn--repos magnetic" href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer" title="IQ Tools Repositories" aria-label="IQ Tools Repositories">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg>
+                  <span class="round-tooltip">IQ Tools Repos</span>
+                </a>
+                <a class="social-round-btn social-round-btn--founder social-btn--insta magnetic" href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram: @iq_maxx143" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <span class="round-tooltip">Instagram @iq_maxx143</span>
+                </a>
+                <a class="social-round-btn social-round-btn--founder social-btn--email1 magnetic" href="mailto:m82461685@gmail.com" title="Primary Email: m82461685@gmail.com" aria-label="Email m82461685@gmail.com">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span class="round-tooltip">m82461685@gmail.com</span>
+                </a>
+                <a class="social-round-btn social-round-btn--founder social-btn--email2 magnetic" href="mailto:iqmaxxdk143@gmail.com" title="Founder Email: iqmaxxdk143@gmail.com" aria-label="Email iqmaxxdk143@gmail.com">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                  <span class="round-tooltip">iqmaxxdk143@gmail.com</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Clean Skill Bars -->
+            <div class="founder-skills">
+              <div class="skill"><span class="skill-name">AI Security Tools</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+              <div class="skill"><span class="skill-name">TUI/CLI Development</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+              <div class="skill"><span class="skill-name">Linux & DevOps</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+              <div class="skill"><span class="skill-name">Bug Bounty Hunting</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+              <div class="skill"><span class="skill-name">UI/UX & Animation</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 // PROCESS SECTION -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">07</span><span class="section-tag">PIPELINE</span></div>
+        <h2 class="section-title reveal">BUILD PROCESS</h2>
+        <p class="section-lede reveal">How every tool moves from concept to deployment inside IQ MAXX.</p>
+
+        <ol class="timeline" id="timeline">
+          <div class="timeline-laser-conduit" aria-hidden="true"></div>
+          <li class="tl-step reveal" data-step="1"><div class="tl-node">01</div><h3>RESEARCH</h3><p>Identify a real security problem and study existing approaches.</p></li>
+          <li class="tl-step reveal" data-step="2"><div class="tl-node">02</div><h3>DESIGN</h3><p>Architect the tool with a focus on UX, terminal aesthetics, and performance.</p></li>
+          <li class="tl-step reveal" data-step="3"><div class="tl-node">03</div><h3>DEVELOP</h3><p>Build the core functionality with clean, efficient code.</p></li>
+          <li class="tl-step reveal" data-step="4"><div class="tl-node">04</div><h3>TEST</h3><p>Validate on real systems, document edge cases, and harden the experience.</p></li>
+          <li class="tl-step reveal" data-step="5"><div class="tl-node">05</div><h3>RELEASE</h3><p>Publish to the hub, open the repo, and share with the community.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 08 // SECURITY / TRUST SECTION -->
+    <section class="section security" id="security">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">08</span><span class="section-tag">ASSURANCE</span></div>
+        <h2 class="section-title reveal">OPEN. TRANSPARENT. BUILT TO LEARN.</h2>
+        <p class="section-lede reveal">No black boxes. Every script, config, and dependency is auditable on GitHub.</p>
+
+        <div class="security-grid">
+          <div class="security-card reveal" data-delay="1">
+            <div class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Auditable Code</h3>
+            <p>Every line of every tool is visible, version controlled, and reviewable.</p>
+          </div>
+          <div class="security-card reveal" data-delay="2">
+            <div class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Transparent</h3>
+            <p>Tools document exactly what they do. No hidden side effects or telemetry.</p>
+          </div>
+          <div class="security-card reveal" data-delay="3">
+            <div class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v4H4zM4 10h16v4H4zM4 16h16v4H4z"/></svg></div>
+            <h3>Local First</h3>
+            <p>Designed to run on your machine. Your data stays on your machine.</p>
+          </div>
+          <div class="security-card reveal" data-delay="4">
+            <div class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg></div>
+            <h3>Educational</h3>
+            <p>Built to help you learn and innovate. Clarity over cleverness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 // CONTACT / FINAL CTA SECTION -->
+    <section class="section final-cta" id="contact">
+      <div class="container">
+        <div class="section-head reveal"><span class="section-num">09</span><span class="section-tag">CONNECT</span></div>
+        <h2 class="final-title reveal">CONNECT WITH IQ MAXX</h2>
+        <p class="final-sub reveal">Direct access to Deepak Kumar.S and the IQ MAXX cybersecurity ecosystem.</p>
+
+        <!-- Cyber Contact Hub -->
+        <div class="contact-hub reveal">
+          <div class="contact-email-cards">
+            <a href="mailto:m82461685@gmail.com" class="contact-card contact-card--primary magnetic">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div class="contact-card-info">
+                <span class="contact-card-tag">PRIMARY CONTACT</span>
+                <span class="contact-card-val">m82461685@gmail.com</span>
+              </div>
+              <span class="contact-card-arrow">↗</span>
+            </a>
+
+            <a href="mailto:iqmaxxdk143@gmail.com" class="contact-card contact-card--founder magnetic">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg></div>
+              <div class="contact-card-info">
+                <span class="contact-card-tag">FOUNDER DIRECT</span>
+                <span class="contact-card-val">iqmaxxdk143@gmail.com</span>
+              </div>
+              <span class="contact-card-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-social-row">
+            <span class="contact-social-label">OFFICIAL CHANNELS:</span>
+            <div class="contact-round-buttons">
+              <a class="social-round-btn social-round-btn--lg social-btn--portfolio magnetic" href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" title="Founder Official Portfolio" aria-label="Founder Official Portfolio">
+                <span class="nav-btn-avatar"><img src="assets/images/founder-deepak.png" alt="Portfolio" class="nav-avatar-img" /></span>
+                <span class="round-tooltip">Live Portfolio</span>
+              </a>
+              <a class="social-round-btn social-round-btn--lg social-btn--github magnetic" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" title="IQ MAXX GitHub" aria-label="IQ MAXX GitHub">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.35.78 1.04.78 2.09v3.1c0 .3.21.66.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                <span class="round-tooltip">IQ MAXX GitHub</span>
+              </a>
+              <a class="social-round-btn social-round-btn--lg social-btn--repos magnetic" href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer" title="IQ Tools Repositories" aria-label="IQ Tools Repositories">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg>
+                <span class="round-tooltip">IQ Tools Repos</span>
+              </a>
+              <a class="social-round-btn social-round-btn--lg social-btn--insta magnetic" href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram @iq_maxx143" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span class="round-tooltip">Instagram @iq_maxx143</span>
+              </a>
+              <a class="social-round-btn social-round-btn--lg social-btn--email1 magnetic" href="mailto:m82461685@gmail.com" title="Email: m82461685@gmail.com" aria-label="Email m82461685@gmail.com">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span class="round-tooltip">m82461685@gmail.com</span>
+              </a>
+              <a class="social-round-btn social-round-btn--lg social-btn--email2 magnetic" href="mailto:iqmaxxdk143@gmail.com" title="Email: iqmaxxdk143@gmail.com" aria-label="Email iqmaxxdk143@gmail.com">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                <span class="round-tooltip">iqmaxxdk143@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-buttons reveal">
+          <a class="btn btn-primary btn-multicolor-primary magnetic" href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" data-scramble="VISIT PORTFOLIO">
+            <span class="btn-text">VISIT PORTFOLIO</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-multicolor-ghost magnetic" href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" data-scramble="EXPLORE IQ MAXX">
+            <span class="btn-text">EXPLORE IQ MAXX</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MINIMALIST FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="assets/images/iqmaxx-logo.png" alt="IQ MAXX Logo" class="footer-logo-img" />
+        <span>IQ MAXX · Deepak Kumar.S · Open Source Cybersecurity Architecture</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" class="magnetic footer-portfolio-link">Portfolio ↗</a>
+        <span class="footer-sep">·</span>
+        <a href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" class="magnetic">IQ MAXX GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="https://github.com/iqmaxxdk143-svg?tab=repositories" target="_blank" rel="noopener noreferrer" class="magnetic">IQ Tools</a>
+        <span class="footer-sep">·</span>
+        <a href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" class="magnetic">Instagram</a>
+        <span class="footer-sep">·</span>
+        <a href="mailto:m82461685@gmail.com" class="magnetic">Email</a>
+        <span class="footer-sep">·</span>
+        <a href="#home" class="magnetic">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MULTI-CHANNEL FLOATING ACTION BUTTON (FAB) -->
+  <div class="fab-wrapper" id="fab-wrapper">
+    <!-- Floating Action Menu Items (Staggered Popout) -->
+    <div class="fab-menu" id="fab-menu" role="menu" aria-label="Quick Connect Channels">
+      <!-- Item 1: Portfolio (Top/Featured) -->
+      <div class="fab-item fab-item--portfolio" style="--fab-index: 1;">
+        <span class="fab-tooltip" id="fab-tt-portfolio">Founder's Live Portfolio</span>
+        <a href="https://dk-s-profile.vercel.app/" target="_blank" rel="noopener noreferrer" class="fab-btn fab-btn--portfolio magnetic" aria-label="Visit Deepak's Portfolio" aria-describedby="fab-tt-portfolio">
+          <div class="fab-avatar-ring">
+            <img src="assets/images/founder-deepak.png" alt="Deepak Kumar.S" class="fab-avatar-img" />
+          </div>
+        </a>
+      </div>
+
+      <!-- Item 2: GitHub -->
+      <div class="fab-item fab-item--github" style="--fab-index: 2;">
+        <span class="fab-tooltip" id="fab-tt-github">GitHub @m82461685-iqmaxx</span>
+        <a href="https://github.com/m82461685-iqmaxx" target="_blank" rel="noopener noreferrer" class="fab-btn fab-btn--github magnetic" aria-label="IQ MAXX GitHub" aria-describedby="fab-tt-github">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.35.78 1.04.78 2.09v3.1c0 .3.21.66.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+      </div>
+
+      <!-- Item 3: Instagram -->
+      <div class="fab-item fab-item--insta" style="--fab-index: 3;">
+        <span class="fab-tooltip" id="fab-tt-insta">Instagram @iq_maxx143</span>
+        <a href="https://www.instagram.com/iq_maxx143?igsi=MWZrd29ubzRnMHNmdw%3D%3D" target="_blank" rel="noopener noreferrer" class="fab-btn fab-btn--insta magnetic" aria-label="Instagram Profile" aria-describedby="fab-tt-insta">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+
+      <!-- Item 4: Mail -->
+      <div class="fab-item fab-item--mail" style="--fab-index: 4;">
+        <span class="fab-tooltip" id="fab-tt-mail">m82461685@gmail.com</span>
+        <a href="mailto:m82461685@gmail.com" class="fab-btn fab-btn--mail magnetic" aria-label="Send Email" aria-describedby="fab-tt-mail">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main FAB Trigger Button with Share Symbol Icon -->
+    <button class="fab-trigger" id="fab-trigger" aria-label="Share & Quick Channels" aria-expanded="false" title="Share & Quick Channels">
+      <span class="fab-pulse-effect" aria-hidden="true"></span>
+      <div class="fab-icon-box">
+        <!-- Share Symbol Icon -->
+        <svg class="fab-icon-default" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <!-- Active Close (✕) Icon -->
+        <svg class="fab-icon-active" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "lenis": "https://unpkg.com/lenis@1.1.18/dist/lenis.mjs"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
